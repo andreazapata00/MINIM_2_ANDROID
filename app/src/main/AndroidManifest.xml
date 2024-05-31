@@ -16,9 +16,7 @@
         android:theme="@style/Theme.Client_dsa"
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
-        <activity
-            android:name=".ProvaActivity"
-            android:exported="false" />
+
         <activity
             android:name=".SplashActivity"
             android:exported="true">
@@ -63,6 +61,12 @@
             android:name=".BotigaActivity"
             android:exported="true"
             android:theme="@style/Theme.Client_dsa"></activity>
+        <activity
+            android:name=".FaqActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Client_dsa"></activity>
+
+
     </application>
 
 </manifest>

@@ -1,6 +1,9 @@
 package com.example.client_dsa;
 
 import com.example.client_dsa.Classes.*;
+
+import java.util.List;
+
 import retrofit2.Call;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
@@ -18,6 +21,9 @@ public interface API {
     //Retorna una llista amb els objectes de la botiga
     @GET("items/llista")
     Call<Item> getItems(@Body Item llistaItem);
+
+    @GET("/usuaris/FAQs")
+    Call<List<Faq>> getFaqs();
 
     //FALTA @POST per quan compres un item
 

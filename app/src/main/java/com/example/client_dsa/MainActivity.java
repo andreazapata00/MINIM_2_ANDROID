@@ -48,7 +48,21 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
             });
+
+            // Obtener el botón
+            Button btnOpenFaq = findViewById(R.id.btnOpenFaq);
+
+            // Configurar el listener del botón para abrir FaqActivity
+            btnOpenFaq.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent intent = new Intent(MainActivity.this, FaqActivity.class);
+                    startActivity(intent);
+                }
+            });
+
         }
+
     }
 
     public void anarLogin(View view)
@@ -56,5 +70,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);
     }
+
+
+
+
+
 
 }
